@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORVEX Medical | Precision Surgical Instrumentation</title>
+    <meta name="description" content="ORVEX Medical develops precision-engineered surgical instrumentation for modern operating rooms. Based in Kochi, India, we combine engineering rigor with clinical insight.">
+    <meta name="keywords" content="surgical instrumentation, medical devices, precision engineering, surgical tools, medical equipment, Kochi medical devices">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            DEFAULT: '#1E3A8A', // Dark Blue
+                            light: '#3B82F6',   // Medium Blue
+                        },
+                        secondary: {
+                            DEFAULT: '#64748B', // Slate 500
+                            light: '#94A3B8',   // Slate 400
+                        },
+                        accent: '#059669',     // Emerald 600
+                        charcoal: '#1F2937',   // Gray 800
+                        border: '#E5E7EB',     // Gray 200
+                    },
+                    spacing: {
+                        '128': '32rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom scrollbar for Webkit browsers */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+    </style>
+</head>
+<body class="bg-white text-charcoal font-sans antialiased selection:bg-primary-light selection:text-white">
+
+    <!-- Hero Section -->
+    <header class="min-h-[85vh] flex flex-col justify-center items-center text-center px-6 relative overflow-hidden bg-gradient-to-b from-blue-50 to-white">
+        <div class="max-w-3xl mx-auto z-10 animate-fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-semibold tracking-tight text-primary mb-6">
+                ORVEX MEDICAL
+            </h1>
+            <p class="text-xl md:text-2xl font-medium text-gray-700 mb-8 max-w-2xl mx-auto leading-relaxed">
+                Precision-engineered surgical instrumentation for modern operating rooms.
+            </p>
+            <p class="text-base md:text-lg text-secondary-DEFAULT mb-12 max-w-xl mx-auto leading-relaxed">
+                We combine mechanical engineering rigor with clinical insight to develop medical devices that perform when precision matters most.
+            </p>
+            <a href="#about" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-light transition-colors duration-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                Learn More
+            </a>
+        </div>
+        
+        <!-- Subtle Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-secondary-light">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- About ORVEX Medical -->
+    <section id="about" class="py-20 md:py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-semibold text-charcoal mb-12 md:mb-16 border-l-4 border-primary pl-4">
+                About ORVEX Medical
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+                <!-- Main Content -->
+                <div class="md:col-span-7 lg:col-span-8 prose prose-lg text-gray-600 leading-relaxed">
+                    <p class="mb-6">
+                        ORVEX Medical is a medical device company based in Kochi, India, focused on developing precision surgical instrumentation. Founded on the principle that operating room tools should match the exactitude of the procedures they enable, we approach medical device development with engineering discipline and clinical empathy.
+                    </p>
+                    <p class="mb-6">
+                        Our work centers on surgical environments where reliability, ergonomics, and precision directly impact patient outcomes. We collaborate with clinicians to understand real-world challenges, then apply rigorous mechanical engineering to solve them.
+                    </p>
+                    <p>
+                        Located in Kerala's growing medical technology sector, we leverage India's deep engineering talent and advanced manufacturing capabilities to build devices that meet international quality standards. We are a team of engineers, designers, and medical technology specialists committed to the long-term development of surgical solutions that clinicians can trust.
+                    </p>
+                </div>
+
+                <!-- Info Box -->
+                <div class="md:col-span-5 lg:col-span-4 bg-gray-50 p-8 rounded-lg border border-border">
+                    <ul class="space-y-6">
+                        <li class="flex flex-col">
+                            <span class="text-sm uppercase tracking-wider text-secondary-light font-medium mb-1">Founded</span>
+                            <span class="text-lg font-medium text-charcoal">2025</span>
+                        </li>
+                        <li class="flex flex-col">
+                            <span class="text-sm uppercase tracking-wider text-secondary-light font-medium mb-1">Location</span>
+                            <span class="text-lg font-medium text-charcoal">Kochi, Kerala, India</span>
+                        </li>
+                        <li class="flex flex-col">
+                            <span class="text-sm uppercase tracking-wider text-secondary-light font-medium mb-1">Focus</span>
+                            <span class="text-lg font-medium text-charcoal">Surgical Instrumentation</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Do -->
+    <section id="what-we-do" class="py-20 md:py-32 bg-gray-50 px-6 border-t border-border">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-semibold text-charcoal mb-16 text-center">
+                What We Do
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+                <!-- Precision Engineering -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-border hover:shadow-md transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Precision Engineering</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We design surgical instruments with the mechanical precision required for delicate operations. Every component is engineered for reliability, sterilization compatibility, and long-term durability in demanding clinical environments.
+                    </p>
+                </div>
+
+                <!-- Ergonomic Design -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-border hover:shadow-md transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Ergonomic Design</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Surgical procedures can extend for hours. Our devices prioritize clinician comfort and control, reducing fatigue while maintaining the tactile feedback surgeons depend on for precise work.
+                    </p>
+                </div>
+
+                <!-- Clinical Integration -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-border hover:shadow-md transition-shadow duration-300">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Clinical Integration</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Medical devices must fit seamlessly into operating room workflows. We develop our instrumentation with input from surgical teams, ensuring compatibility with existing protocols and equipment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Approach -->
+    <section id="approach" class="py-20 md:py-32 px-6 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-semibold text-charcoal mb-16 border-l-4 border-primary pl-4">
+                Our Approach
+            </h2>
+
+            <div class="space-y-16">
+                <!-- 01 -->
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12">
+                    <div class="flex-shrink-0">
+                        <span class="text-6xl font-bold text-gray-100 select-none">01</span>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-medium text-charcoal mb-4 mt-2">Clinician-Centered Development</h3>
+                        <p class="text-gray-600 leading-relaxed max-w-2xl">
+                            Our design process begins in operating rooms, not conference rooms. We observe procedures, interview surgeons, and understand the specific challenges of surgical environments before we engineer solutions. Every feature must solve a real clinical problem.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 02 -->
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12">
+                    <div class="flex-shrink-0">
+                        <span class="text-6xl font-bold text-gray-100 select-none">02</span>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-medium text-charcoal mb-4 mt-2">Engineering Rigor</h3>
+                        <p class="text-gray-600 leading-relaxed max-w-2xl">
+                            Medical devices require aerospace-level precision. We apply iterative prototyping, materials testing, and failure analysis to ensure reliability. Our development timelines prioritize quality over speed—devices must perform flawlessly in high-stakes environments.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 03 -->
+                <div class="flex flex-col md:flex-row gap-6 md:gap-12">
+                    <div class="flex-shrink-0">
+                        <span class="text-6xl font-bold text-gray-100 select-none">03</span>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-medium text-charcoal mb-4 mt-2">Regulatory Awareness</h3>
+                        <p class="text-gray-600 leading-relaxed max-w-2xl">
+                            Compliance is not an afterthought. We design with regulatory pathways in mind from the first sketch, incorporating documentation, traceability, and quality systems that align with international medical device standards.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why ORVEX -->
+    <section id="why-orvex" class="py-20 md:py-32 bg-gray-50 px-6 relative overflow-hidden">
+        <!-- Subtle dot pattern background -->
+        <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(#64748B 1px, transparent 1px); background-size: 24px 24px;"></div>
+        
+        <div class="max-w-6xl mx-auto relative z-10">
+            <h2 class="text-3xl md:text-4xl font-semibold text-charcoal mb-16 text-center">
+                Why ORVEX
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-border border border-border overflow-hidden rounded-lg shadow-sm">
+                
+                <!-- Long-Term Focus -->
+                <div class="bg-white p-8 md:p-12">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Long-Term Focus</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        We are building a company for decades, not quarters. Our devices are designed for long product lifecycles, sustained clinical relationships, and continuous improvement based on real-world feedback. We prioritize foundational work over rapid iteration.
+                    </p>
+                </div>
+
+                <!-- Niche Expertise -->
+                <div class="bg-white p-8 md:p-12">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Niche Expertise</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Rather than broad portfolios, we focus deeply on specific surgical domains. This allows us to develop true expertise in the biomechanics, workflows, and clinical nuances that define excellence in specialized instrumentation.
+                    </p>
+                </div>
+
+                <!-- Quality First -->
+                <div class="bg-white p-8 md:p-12">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Quality First</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Every component, every material choice, every tolerance is specified for reliability. We believe medical device companies earn trust through consistent performance, and we design our operations around quality systems that support that commitment.
+                    </p>
+                </div>
+
+                <!-- Strategic Location -->
+                <div class="bg-white p-8 md:p-12">
+                    <h3 class="text-xl font-semibold text-primary mb-4">Strategic Location</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        India's medical device sector combines world-class engineering talent, advanced manufacturing infrastructure, and cost-effective R&D. We leverage these advantages while maintaining international quality standards and regulatory compliance.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 md:py-32 px-6 bg-white">
+        <div class="max-w-3xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-semibold text-charcoal mb-8">
+                Get In Touch
+            </h2>
+            <p class="text-lg text-gray-600 mb-12 leading-relaxed">
+                For partnership opportunities, investor inquiries, or general questions about ORVEX Medical, please contact us at the email below. We respond to all inquiries within 2-3 business days.
+            </p>
+            
+            <a href="mailto:mail@orvexmedical.com" class="text-2xl md:text-3xl font-medium text-primary hover:text-primary-light transition-colors duration-300 block mb-16 break-all">
+                mail@orvexmedical.com
+            </a>
+
+            <div class="border-t border-border pt-12">
+                <address class="not-italic text-secondary-DEFAULT leading-relaxed text-base md:text-lg">
+                    <strong class="block text-charcoal font-semibold mb-2">ORVEX MEDICAL PRIVATE LIMITED</strong>
+                    No. 4/461, 2nd Floor, Suite No.1224<br>
+                    Valamkottil Towers, Judgemukku,<br>
+                    Kakkanad, Kochi - 682021<br>
+                    Kerala, India
+                </address>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-charcoal text-white py-8 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col items-center justify-center text-center">
+            <p class="text-sm text-gray-400">
+                © 2025-2026 ORVEX Medical Private Limited. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Minimal Scripts -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Simple Intersection Observer for fade-in animations
+        document.addEventListener("DOMContentLoaded", function() {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            const sections = document.querySelectorAll('section > div');
+            sections.forEach(section => {
+                section.classList.add('transition', 'duration-1000', 'opacity-0', 'translate-y-4');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
