@@ -55,8 +55,16 @@
 <body class="bg-white text-charcoal font-sans antialiased selection:bg-primary-light selection:text-white">
 
     <!-- Hero Section -->
-    <header class="min-h-[85vh] flex flex-col justify-center items-center text-center px-6 relative overflow-hidden bg-gradient-to-b from-blue-50 to-white">
-        <div class="max-w-3xl mx-auto z-10 animate-fade-in-up">
+    <header class="min-h-[85vh] flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
+        <!-- Video Background -->
+        <video autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover z-0">
+            <source src="Assets/mainVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-white/0 z-0"></div>
+
+        <div class="max-w-3xl mx-auto z-10 animate-fade-in-up relative">
             <h1 class="text-4xl md:text-6xl font-semibold tracking-tight text-primary mb-6">
                 ORVEX MEDICAL
             </h1>
@@ -72,7 +80,7 @@
         </div>
         
         <!-- Subtle Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-secondary-light">
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce text-secondary-light z-10">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
             </svg>
